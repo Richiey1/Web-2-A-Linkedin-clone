@@ -1,0 +1,194 @@
+/*This is the stylesheet for navbar.css */
+
+.nav-container {
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    background: white;
+    border-bottom: 0.05rem solid lightgray;
+}
+
+.nav-container-left {
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 4px;
+    width: 25%;
+    padding: 0px 4px;
+}
+
+.nav-container-left  .nav-search {
+    background-color: #edf3f8;
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 4px;
+    justify-content: flex-start;
+    padding: 8px 16px;
+}
+
+.nav-icon {
+    border-radius: 8px;
+    width: 48px;
+    height: 48px;
+}
+
+.nav-search {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #edf3f8;
+    padding: 2px 16px;
+    border-radius: 4px;
+    width: 50%;
+    transition: width 0.9s linear;
+}
+
+.nav-search:focus-within {
+    border: 2px solid black;
+    width: 100%;
+}
+.nav-search input {
+    border: 0;
+    outline: 0;
+    padding: 8px 10px;
+    background-color: transparent;
+    font-size: 15px;
+    
+}
+.nav-search input:focus {
+    width: 100%;
+}
+
+/* NAV CONTAINER CENTER*/
+.nav-container-center {
+    padding: 0 12px;
+}
+
+
+.nav-container-center li {
+    list-style-type: none;
+}
+
+.navbar-items {
+    display: flex;
+    flex-wrap: row nowrap;
+    gap: 30px;
+}
+.navbar-items a {
+    font-size: 12px;
+    color: black;
+    height: 100%;
+    text-decoration: none;
+    padding: 8 16px;
+    opacity: 0.6;
+    transition: opacity 0.1 ease-in;
+}
+.navbar-items a:first-of-type {
+    opacity: 1;
+    border-bottom: 2px solid black
+} 
+
+.navbar-items a:hover {
+    opacity: 1;
+}
+
+/* NAV CONTAINER RIGHT*/
+.nav-container-right {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    border-left: 1px solid lightgray;
+    padding: 0 16px;
+    gap: 24px;
+}
+.for-business-text {
+    font-size: 14px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 4px;
+}
+
+.premium-container {
+    font-size: 14px;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 4px;
+    text-align: left;
+    align-items: center;
+}
+.orange-box {
+    display: block;
+    border-radius: 4px;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(45deg orange 50%,#f9c9b2 50%);
+    line-height: normal;
+}
+
+.orange-box-small {
+    display: block;
+    border-radius: 4px;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(45deg orange 50%,#f9c9b2 50%);
+    line-height: normal;
+}
+main section {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 50%;
+    gap: 2px;
+}
+
+main section .post {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+main section .post h2 {
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+main section .post p {
+    font-size: 0.875rem;
+    color: #5e5e5e;
+}
+
+main section .post button {
+    background-color: #0073b1;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+main section .post button:hover {
+    background-color: #005582;
+}
+
+main section .post .actions button {
+    color: #5e5e5e;
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+}
+
+main section .post .actions button i {
+    margin-right: 0.5rem;
+}
+
+main section .post .actions button:hover {
+    color: #000;
+}
